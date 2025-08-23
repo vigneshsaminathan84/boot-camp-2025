@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>User Information Form</h2>
+    <form id="userForm">
+    <table>
+        <td>
+         <tr><label>Full Name:</label></tr>
+         <tr><input type="text" id="name" required></tr>
+        </td><br><br>
+
+      <td>
+        <tr><label>Email:</label></tr>
+         <tr><input type="email" id="email" required></tr>
+         </td><br><br>
+
+      <td>
+        <tr> <label>Phone:</label></tr>
+        <tr><input type="number" id="phone" required></tr>
+        </td><br><br>
+
+      <td>
+        <tr><label>Age:</label></tr>
+      <tr><input type="number" id="age"></tr>
+      </td><br><br>
+
+        <td>
+       <tr>
+           <label>Gender:</label>
+       </tr>
+      <tr>
+        <select id="gender">
+        <option value="">--Select--</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+      </tr>
+        </td><br><br>
+
+     <td>
+       <tr>  <label>Date of Birth:</label></tr>
+      <tr><input type="date" id="dob"></tr>
+     </td><br><br>
+
+      <td>
+        <tr><label>Address:</label></tr>
+      <tr><textarea id="address"></textarea></tr>
+      </td><br><br>
+
+      
+
+      <button type="submit">Submit</button>
+    </form><br><br>
+
+    <div id="result"></div>
+  </div>
+    </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
